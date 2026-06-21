@@ -46,6 +46,9 @@ CapsLock & p::SendText "+"
 CapsLock & m::SendText "-"
 CapsLock & e::SendText "="
 
+; CapsLock + - -> —
+CapsLock & -::SendText "—"
+
 ; CapsLock + Left Ctrl -> toggle actual CapsLock state
 CapsLock & LCtrl::{
     if GetKeyState("CapsLock", "T")
