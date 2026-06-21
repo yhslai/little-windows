@@ -41,7 +41,8 @@ CapsLock & l::SendText "{"
 ; SC027 = physical ;/: key on a US keyboard
 CapsLock & SC027::SendText "}"
 
-; CapsLock + P/M/E -> + - =
+; CapsLock + O/P/M/E -> _ + - =
+CapsLock & o::SendText "_"
 CapsLock & p::SendText "+"
 CapsLock & m::SendText "-"
 CapsLock & e::SendText "="
